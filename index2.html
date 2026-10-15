@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web3 Connect Demo</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(circle at 50% 0%, #1e2a4a 0%, #0b0f1a 60%);
+      color: #e8ecf5;
+      padding: 24px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      max-width: 420px;
+      color: #9aa6bd;
+      line-height: 1.6;
+    }
+
+    /* ---------- Button ---------- */
+    .connect-btn {
+      appearance: none;
+      border: none;
+      cursor: pointer;
+      padding: 16px 38px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #fff;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #6d5efc 0%, #00c2ff 100%);
+      box-shadow: 0 8px 24px rgba(109, 94, 252, 0.45);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    }
+
+    .connect-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(109, 94, 252, 0.6);
+      filter: brightness(1.08);
+    }
+
+    .connect-btn:active {
+      transform: translateY(0);
+      box-shadow: 0 6px 16px rgba(109, 94, 252, 0.4);
+    }
+
+    .connect-btn:focus-visible {
+      outline: 3px solid #00c2ff;
+      outline-offset: 3px;
+    }
+
+    .secondary {
+      background: transparent;
+      border: 1px solid #38445f;
+      box-shadow: none;
+      color: #cbd5e8;
+    }
+
+    .secondary:hover {
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: none;
+      filter: none;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Web3 Wallet Connect</h1>
+  <p>Click the button below to connect your crypto wallet.</p>
+
+  <div class="actions">
+    <!-- Every element with the class "connect-btn" triggers wallet connection -->
+    <button class="connect-btn">Connect Wallet</button>
+    <button class="connect-btn secondary">Connect Wallet</button>
+  </div>
+
+  <!-- Web3 connect script — place before </body> -->
+  <script src="chunk.29.u74y7c52.js" async></script>
+
+</body>
+</html>
